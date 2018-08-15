@@ -5,7 +5,7 @@ from gensim.summarization.summarizer import summarize
 import wikipedia
 import urllib.request
 import operator ,re
-from utils import utils 
+
 
 app.jinja_env.cache = {}
 def relevant_wiki(text):
