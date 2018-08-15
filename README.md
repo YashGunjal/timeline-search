@@ -3,4 +3,4 @@
 to run :
 >>python title-timeline.py
 
- then visit (link)[http://localhost:5000/]
+ then visit [http://localhost:5000/](http://localhost:5000/)
