@@ -208,7 +208,7 @@ def hello():
     #soting the sentences containing year in chronological order
 	import operator
 	sorted_year_sent = []
-	for key,value in sorted(dicty.items(), key=operator.itemgetter(1)):
+	for key,value in sorted(dicty.items(), key=operator.itemgetter(1) , reverse =True):
 		sorted_year_sent.append(key)
 		#print(value,key)#uncomment this to have output with year
 	all_sent = (" ").join(sorted_year_sent)
@@ -220,5 +220,5 @@ def hello():
 	
 	
 if __name__ == '__main__':
-	app.run(debug = True)
+	app.run(debug = False)
 	
