@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+	<title>Enter text</title>
+	<style>
+body {
+        background-image: url({{ url_for('static', filename="/light-brown-NR.jpg") }});
+} 
+ 
+</style>
+	</head>
+	<body>
+		<center>
+		<form action ="/result/" method = "Post">
+			Enter Text: <input type ="text" name="text1"><br>
+			<input type="submit" value= "Search">
+		</form>
+		</center>
+	</body>
+</html>

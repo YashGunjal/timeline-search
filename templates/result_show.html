@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+	<title>Results for {{ text1}}</title>
+	<style>
+body {
+        background-image: url("light-cyan-NR.jpg");
+} 
+ 
+</style>
+ 
+	</head>
+	<body>
+		{% if result != 'NULL' %}
+		<p> result from {{ result }} </p>
+		
+		<h1>Results for {{ text1 }}</h1>
+		{% for sent in sentences %}
+			<p><h3>{{ dicty[sent] }} - {{  sent }}</h3></p>
+		
+			
+		{% endfor %}
+		{% else %}
+		<p> Returns NULL means - No Result Found </p>
+		{% endif %}
+		
+		
+		
+	</body>
+</html>
